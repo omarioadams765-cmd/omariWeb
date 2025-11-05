@@ -1,0 +1,162 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omario Adams - Home</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Navigation Bar */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background: rgba(0,0,0,0.2);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+
+  .nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Hero Section */
+  .hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 100px; /* Added space below fixed nav */
+  }
+
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+
+  .cta-button {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  /* Floating shapes */
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: float 6s infinite ease-in-out;
+  }
+
+  .circle1 {
+    width: 150px;
+    height: 150px;
+    background: #00c6ff;
+    top: 50px;
+    left: 30px;
+  }
+
+  .circle2 {
+    width: 200px;
+    height: 200px;
+    background: #0072ff;
+    top: 300px;
+    right: 50px;
+  }
+
+  .circle3 {
+    width: 100px;
+    height: 100px;
+    background: #00c6ff;
+    bottom: 100px;
+    left: 200px;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    margin-top: auto;
+  }
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <div>
+    <a href="file:///C:/Users/omari/Downloads/Hobbies.html" target="_blank">About</a>
+    <a href="file:///C:/Users/omari/Downloads/Timetable.html" target="_blank">Timetable</a>
+    <a href="file:///C:/Users/omari/Downloads/Calender.html" target="_blank">Calendar</a>
+    <a href="file:///C:/Users/omari/Downloads/Contactform.html" target="_blank">Form</a>
+    <a href="https://isims.pcc.edu.jm" target="_blank">PCC Website</a>
+  </div>
+</div>
+
+<div class="hero">
+  <h1>Welcome to My Website V16.5</h1>
+  <p>This is my personal landing page where you can explore my about me, timetable, forms, and more!</p>
+  <a class="cta-button" href="https://www.delta.com/lac/en" target="_blank"><b>Explore Now</b></a>
+</div>
+
+<!-- Floating shapes -->
+<div class="circle circle1"></div>
+<div class="circle circle2"></div>
+<div class="circle circle3"></div>
+
+<footer>
+  &copy; 2025 Omario Adams
+</footer>
+
+</body>
+</html>
