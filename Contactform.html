@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form - Omario Adams</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, lightblue, lightyellow);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: #111;
+      margin: 0;
+    }
+    h1 {
+      color: darkblue;
+      margin-top: 20px;
+    }
+    form {
+      text-align: left;
+      width: 80%;
+      margin: 20px auto;
+      padding: 15px;
+      border: 2px solid darkblue;
+      border-radius: 10px;
+      background: #fff;
+    }
+    input, select, textarea {
+      width: 95%;
+      margin: 5px 0;
+      padding: 6px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"], input[type="reset"] {
+      width: 48%;
+      background: darkblue;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      font-weight: bold;
+    }
+    input[type="reset"] {
+      background: #999;
+    }
+    footer {
+      margin-top: 20px;
+      background: darkblue;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contact Form</h1>
+
+  <form onsubmit="return showAlert()">
+    <label>Full Name:</label><br>
+    <input type="text" placeholder="Enter your full name" required><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Male" required> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other<br><br>
+
+    <label>Age:</label><br>
+    <input type="number" min="10" max="100" placeholder="Enter your age" required><br>
+
+    <label>Favorite Subject:</label><br>
+    <select required>
+      <option value="">--Select a subject--</option>
+      <option value="Web Development">Web Development</option>
+      <option value="Systems Administration">Systems Administration</option>
+      <option value="Circuits & Devices">Circuits & Devices</option>
+      <option value="Customer Service">Customer Service</option>
+      <option value="Management">Management</option>
+    </select><br><br>
+
+    <label>Message:</label><br>
+    <textarea placeholder="Type your message here" rows="4"></textarea><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+  <script>
+  function showAlert() {
+    alert("You really think this would work? Lol");
+    return false;
+  }
+  </script>
+
+  <footer>
+    <p>Created by Omario Adams | PCC Student</p>
+  </footer>
+
+</body>
+</html>
